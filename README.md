@@ -82,12 +82,12 @@ git push origin main
 
 ```
 find ./ -type f -name "*.java" > compfiles.txt
-javac -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
+javac -encoding utf-8 -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
 ```
 Ejecutar ambos comandos en 1 sólo paso:
 
 ```
-find ./ -type f -name "*.java" > compfiles.txt ; javac -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
+find ./ -type f -name "*.java" > compfiles.txt ; javac -encoding utf-8 -d build -cp lib/junit-platform-console-standalone-1.5.2.jar @compfiles.txt
 ```
 
 
